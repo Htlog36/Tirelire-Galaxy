@@ -91,7 +91,7 @@ def scanner_reserves():
     pourcentage = min(100, int((solde / objectif) * 100))
     
     table = Table(show_header=False, box=None)
-    table.add_row("[accent]💰 Solde Actuel :[/accent]", f"[accent bold]{solde} Crédits Galactiques[/accent]")
+    table.add_row("[accent]💰 Solde Actuel :[/accent]", f"[accent]{solde} Crédits Galactiques[/accent]")
     table.add_row("[secondary]🎯 Objectif :[/secondary]", f"[secondary]{objectif} Crédits[/secondary]")
     console.print(Panel(table, title="État du Compte", border_style="cyan"))
 
